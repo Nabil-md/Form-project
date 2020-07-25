@@ -1,3 +1,4 @@
+<html>
 <head>
     <title>Form</title>
     <!-- Compiled and minified CSS -->
@@ -25,5 +26,5 @@
             </ul>
         </div>
     </nav>
-
+</html>
     
