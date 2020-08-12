@@ -32,8 +32,8 @@ echo $_SERVER['PHP_SELF'].'</br>';
 if (isset($_POST['submit'])) {
     session_start();
     $_SESSION['name'] = $_POST['name'];
-    echo $_SESSION['name'];
 
+    header('location: index.php');
 }
 
 ?>
