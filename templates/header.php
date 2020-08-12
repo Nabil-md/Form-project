@@ -1,3 +1,24 @@
+<?php 
+
+session_start();
+
+// override: 
+// $_SESSION['name']= 'Nabil';
+
+if ($_SERVER['QUERY_STRING'] === 'noname') {
+    unset($_SESSION['name']);
+}
+
+
+// to unset all session variables: session_unset();
+
+$name = $_SESSION['name'];
+
+
+?>
+
+
+
 <html>
 <head>
     <title>Form</title>
@@ -22,6 +43,7 @@
         <div class="container">
             <a href="index.php" class ="brand-logo brand-text">Members</a>
             <ul id="nav-mobile" class="right hide-on-small-and-down">
+                <li class ="grey-text">Hello <?php echo htmlspecialchars($name); ?></li>
                 <li><a href="add.php" class="btn brand z-depth-0" >Add a person</a></li>
             </ul>
         </div>
