@@ -2,7 +2,7 @@
 
 // Connect to database: MySQLi
 
-$conn = mysqli_connect('localhost','Nabil','nabilnaruto1997', 'members');
+$conn = mysqli_connect('localhost','Nabil','nabil9', 'members');
 
 // check the connection
 
